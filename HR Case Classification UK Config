@@ -1,0 +1,22 @@
+<xml>
+<sn_hr_core_ai_configuration>
+<active>true</active>
+<solution_capability_definition display_value="HR Case Classification UK">83ea2f1053c40010d1dcddeeff7b12f5</solution_capability_definition>
+<sys_class_name>sn_hr_core_ai_configuration</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-06-08 21:35:08</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_domain>2dde5e3b837ecf90c7b4c510feaad360</sys_domain>
+<sys_id>13ac12ce23a21300fb0c949e27bf65fa</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_name/>
+<sys_package display_value="Human Resources: Core" source="sn_hr_core">d4ac3fff5b311200a4656ede91f91af2</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Human Resources: Core">d4ac3fff5b311200a4656ede91f91af2</sys_scope>
+<sys_update_name>sn_hr_core_ai_configuration_13ac12ce23a21300fb0c949e27bf65fa</sys_update_name>
+<sys_updated_by>QXZ61Y8</sys_updated_by>
+<sys_updated_on>2026-08-26 09:16:22</sys_updated_on>
+<use_case>email_categorization</use_case>
+</sn_hr_core_ai_configuration>
+</xml>
