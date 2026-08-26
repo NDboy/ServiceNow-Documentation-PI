@@ -1,0 +1,64 @@
+<xml>
+<sys_script>
+<abort_action>false</abort_action>
+<access>package_private</access>
+<action_delete>false</action_delete>
+<action_insert>true</action_insert>
+<action_query>false</action_query>
+<action_update>false</action_update>
+<active>true</active>
+<add_message>false</add_message>
+<advanced>true</advanced>
+<change_fields>false</change_fields>
+<client_callable>false</client_callable>
+<collection>sn_hr_core_case</collection>
+<condition>javascript:gs.getProperty("sn_hr_core.auto_categorization", true)</condition>
+<description/>
+<execute_function>false</execute_function>
+<filter_condition table="sn_hr_core_case">
+contact_type=email^transferred_fromISEMPTY^u_acting_es_domain=f64ce9fcdb955dd0c14a94d3f3961916^ORu_acting_es_domain=213f0a081b0870109f1c1065bb4bcb40^topic_category!=2b3e6cbb83083a14c7b4c510feaad3e3^hr_service!=f103d27f1b6cb15067a5997bbb4bcbfb^EQ
+<item goto="false" or="false" field="contact_type" endquery="false" value="email" operator="=" newquery="false"/>
+<item goto="false" or="false" field="transferred_from" endquery="false" value="" operator="ISEMPTY" newquery="false"/>
+<item goto="false" or="false" field="u_acting_es_domain" endquery="false" value="f64ce9fcdb955dd0c14a94d3f3961916" operator="=" newquery="false" display_table="sn_hr_core_hr_es_domain" display_value="HR ES UK"/>
+<item goto="false" or="true" field="u_acting_es_domain" endquery="false" value="213f0a081b0870109f1c1065bb4bcb40" operator="=" newquery="false" display_table="sn_hr_core_hr_es_domain" display_value="HR ES AT"/>
+<item goto="false" or="false" field="topic_category" endquery="false" value="2b3e6cbb83083a14c7b4c510feaad3e3" operator="!=" newquery="false" display_table="sn_hr_core_topic_category" display_value="Group Car Schemes"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="f103d27f1b6cb15067a5997bbb4bcbfb" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="Incoming case"/>
+<item goto="false" or="false" field="" endquery="true" value="" operator="=" newquery="false"/>
+</filter_condition>
+<is_rest>false</is_rest>
+<message/>
+<name>Predict COE, Service after insert</name>
+<order>150</order>
+<priority>100</priority>
+<rest_method/>
+<rest_method_text/>
+<rest_service/>
+<rest_service_text/>
+<rest_variables/>
+<role_conditions/>
+<script>
+<![CDATA[ (function executeRule(current, previous /*null when async*/ ) { var predictions = new hr_CaseAjax().getPredictions(current); if (predictions) { current.work_notes = gs.getMessage('Auto-categorized case with predicted COE: {0}, predicted Service: {1}', [predictions.coe_display, predictions.service_display]); current.sys_class_name = predictions.coe_display; current.hr_service = predictions.service_id; } })(current, previous); ]]>
+</script>
+<sys_class_name>sys_script</sys_class_name>
+<sys_created_by>john.hurst@snc</sys_created_by>
+<sys_created_on>2018-03-06 23:25:17</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>5e707273dbe05300c774594e5e9619a4</sys_id>
+<sys_mod_count>41</sys_mod_count>
+<sys_name>Predict COE, Service after insert</sys_name>
+<sys_overrides/>
+<sys_package display_value="Human Resources: Core" source="sn_hr_core">d4ac3fff5b311200a4656ede91f91af2</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Human Resources: Core">d4ac3fff5b311200a4656ede91f91af2</sys_scope>
+<sys_update_name>sys_script_5e707273dbe05300c774594e5e9619a4</sys_update_name>
+<sys_updated_by>QXZ61Y8</sys_updated_by>
+<sys_updated_on>2026-08-26 08:42:14</sys_updated_on>
+<template/>
+<when>before</when>
+</sys_script>
+<sys_translated_text action="delete_multiple" query="documentkey=5e707273dbe05300c774594e5e9619a4"/>
+</xml>
+ 
