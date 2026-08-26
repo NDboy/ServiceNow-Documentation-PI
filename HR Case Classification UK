@@ -1,0 +1,59 @@
+<xml>
+<ml_capability_definition_classification>
+<active>true</active>
+<capability display_value="Workflow Classification">877599b3770111107d80204bcd5a994c</capability>
+<current_solution_version>4</current_solution_version>
+<dataset_language>en</dataset_language>
+<fields>description</fields>
+<filter table="sn_hr_core_case">
+active=false^state!=7^descriptionISNOTEMPTY^u_acting_es_domain=f64ce9fcdb955dd0c14a94d3f3961916^hr_service!=cb4dd418dbc83d90c14a94d3f39619d3^hr_service!=eb7554e88330ba10bd3ef978beaad350^hr_service!=0a5cafd483f43a10bd3ef978beaad3a6^hr_service!=8d949c208330ba10bd3ef978beaad37f^hr_service!=dd4bab9483b43a10bd3ef978beaad36c^hr_service!=ff76d4648370ba10bd3ef978beaad315^hr_service!=069598e88330ba10bd3ef978beaad3af^hr_service!=e8e5d4ec8330ba10bd3ef978beaad37f^hr_service!=652618608370ba10bd3ef978beaad3e4^hr_service!=97d58b8f83e4f6d0a1fb85b8beaad3fb^hr_service!=f2b55c6c8330ba10bd3ef978beaad35e^hr_service!=bf83d86083fc7a10bd3ef978beaad3b7^hr_service!=c14350ac83bc7a10bd3ef978beaad339^EQ
+<item goto="false" or="false" field="active" endquery="false" value="false" operator="=" newquery="false"/>
+<item goto="false" or="false" field="state" endquery="false" value="7" operator="!=" newquery="false"/>
+<item goto="false" or="false" field="description" endquery="false" value="" operator="ISNOTEMPTY" newquery="false"/>
+<item goto="false" or="false" field="u_acting_es_domain" endquery="false" value="f64ce9fcdb955dd0c14a94d3f3961916" operator="=" newquery="false" display_table="sn_hr_core_hr_es_domain" display_value="HR ES UK"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="cb4dd418dbc83d90c14a94d3f39619d3" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="To be categorised"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="eb7554e88330ba10bd3ef978beaad350" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="Assisted Order (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="0a5cafd483f43a10bd3ef978beaad3a6" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="Complaints (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="8d949c208330ba10bd3ef978beaad37f" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="Driving Licence Checks (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="dd4bab9483b43a10bd3ef978beaad36c" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="Fines (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="ff76d4648370ba10bd3ef978beaad315" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="International Assignments (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="069598e88330ba10bd3ef978beaad3af" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="Leaver Notification (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="e8e5d4ec8330ba10bd3ef978beaad37f" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="New Starter Notification (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="652618608370ba10bd3ef978beaad3e4" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="Promotions (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="97d58b8f83e4f6d0a1fb85b8beaad3fb" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="To be categorised - GCS"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="f2b55c6c8330ba10bd3ef978beaad35e" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="Transfer Notification (GCS)"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="bf83d86083fc7a10bd3ef978beaad3b7" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="GCSO Access Issues"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="c14350ac83bc7a10bd3ef978beaad339" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="GCSO Application "/>
+<item goto="false" or="false" field="" endquery="true" value="" operator="=" newquery="false"/>
+</filter>
+<groupby_field/>
+<output_field>hr_service</output_field>
+<pretrained>false</pretrained>
+<request_source>api</request_source>
+<solution_label>HR Case Classification UK</solution_label>
+<solution_name>ml_sn_global_hr_case_classification</solution_name>
+<solution_parameters/>
+<solution_properties>{"advancedParams":{"mluc":"MLUC-HR-00003"},"datasetProperties":{"tableName":"sn_hr_core_case","fieldNames":["description","hr_service","sys_created_on"],"encodedQuery":"active\u003dfalse^state!\u003d7^descriptionISNOTEMPTY^u_acting_es_domain\u003df64ce9fcdb955dd0c14a94d3f3961916^hr_service!\u003dcb4dd418dbc83d90c14a94d3f39619d3^hr_service!\u003deb7554e88330ba10bd3ef978beaad350^hr_service!\u003d0a5cafd483f43a10bd3ef978beaad3a6^hr_service!\u003d8d949c208330ba10bd3ef978beaad37f^hr_service!\u003ddd4bab9483b43a10bd3ef978beaad36c^hr_service!\u003dff76d4648370ba10bd3ef978beaad315^hr_service!\u003d069598e88330ba10bd3ef978beaad3af^hr_service!\u003de8e5d4ec8330ba10bd3ef978beaad37f^hr_service!\u003d652618608370ba10bd3ef978beaad3e4^hr_service!\u003d97d58b8f83e4f6d0a1fb85b8beaad3fb^hr_service!\u003df2b55c6c8330ba10bd3ef978beaad35e^hr_service!\u003dbf83d86083fc7a10bd3ef978beaad3b7^hr_service!\u003dc14350ac83bc7a10bd3ef978beaad339^EQ","maxRowLimit":300000.0,"fetchDisplayValue":false},"description":"Workflow Classification","inputFieldNames":["description"],"label":"HR Case Classification UK","predictedFieldName":"hr_service","processingLanguage":"en","schedulingInfo":{"useCase":"MLUC-HR-00003"},"scope":"sn_hr_core","stopwords":["Default English Stopwords"],"tags":["classification","Workflow"],"trainingFrequency":"run_once","trainingPipeline":{"pipelineName":"classification_pipeline_v3","pipelineInput":{"datasets":{"incidents":{"tableName":"sn_hr_core_case","fieldNames":["description","hr_service","sys_created_on"],"encodedQuery":"active\u003dfalse^state!\u003d7^descriptionISNOTEMPTY^u_acting_es_domain\u003df64ce9fcdb955dd0c14a94d3f3961916^hr_service!\u003dcb4dd418dbc83d90c14a94d3f39619d3^hr_service!\u003deb7554e88330ba10bd3ef978beaad350^hr_service!\u003d0a5cafd483f43a10bd3ef978beaad3a6^hr_service!\u003d8d949c208330ba10bd3ef978beaad37f^hr_service!\u003ddd4bab9483b43a10bd3ef978beaad36c^hr_service!\u003dff76d4648370ba10bd3ef978beaad315^hr_service!\u003d069598e88330ba10bd3ef978beaad3af^hr_service!\u003de8e5d4ec8330ba10bd3ef978beaad37f^hr_service!\u003d652618608370ba10bd3ef978beaad3e4^hr_service!\u003d97d58b8f83e4f6d0a1fb85b8beaad3fb^hr_service!\u003df2b55c6c8330ba10bd3ef978beaad35e^hr_service!\u003dbf83d86083fc7a10bd3ef978beaad3b7^hr_service!\u003dc14350ac83bc7a10bd3ef978beaad339^EQ","maxRowLimit":300000.0,"fetchDisplayValue":false}},"config":{"features":["description"],"encoder_method":"GUSE-ML","solution_output_field_type_reference":"true","language":"en","class_separator":":","classifier_method":"FeedForward","stopwords":"a, about, above, after, again, against, all, am, an, and, any, are, as, at, b, be, because, been, before, being, below, between, both, but, by, c, can, could, d, did, do, does, doing, down, during, e, each, f, few, for, from, further, g, h, had, has, have, having, he, he\u0027d, he\u0027ll, he\u0027s, her, here, here\u0027s, hers, herself, him, himself, his, how, how\u0027s, i, i\u0027d, i\u0027ll, i\u0027m, i\u0027ve, if, in, into, is, it, it\u0027s, its, itself, j, k, l, let\u0027s, m, me, more, most, my, myself, n, no, nor, not, o, of, off, on, once, only, or, other, ought, our, ours , ourselves, out, over, own, p, q, r, s, same, she, she\u0027d, she\u0027ll, she\u0027s, should, so, some, such, t, than, that, that\u0027s, the, their, theirs, them, themselves, then, there, there\u0027s, these, they, they\u0027d, they\u0027ll, they\u0027re, they\u0027ve, this, those, through, to, too, u, under, until, up, v, very, w, was, we, we\u0027d, we\u0027ll, we\u0027re, we\u0027ve, were, what, what\u0027s, when, when\u0027s, where, where\u0027s, which, while, who, who\u0027s, whom, why, why\u0027s, with, would, x, y, you, you\u0027d, you\u0027ll, you\u0027re, you\u0027ve, your, yours, yourself, yourselves, z, return, hes, heres, hows, im, its, lets, shes, thats, theres, theyll, theyre, theyve, were, whats, whens, wheres, whos, whys, youd, youll, youre, youve, -lrb-, -rrb-, -lsb-, -rsb-, \u0027ll, \u0027s, \u0027m","labels":["hr_service"],"enable_class_separator":"true"}}},"triggered_source":"UI","workflowConfiguration":{"trainingFrequency":"run_once"}}</solution_properties>
+<stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+<sys_class_name>ml_capability_definition_classification</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-09-18 22:43:19</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_domain>global</sys_domain>
+<sys_id>83ea2f1053c40010d1dcddeeff7b12f5</sys_id>
+<sys_mod_count>16</sys_mod_count>
+<sys_name>HR Case Classification UK</sys_name>
+<sys_package display_value="Human Resources: Core" source="sn_hr_core">d4ac3fff5b311200a4656ede91f91af2</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Human Resources: Core">d4ac3fff5b311200a4656ede91f91af2</sys_scope>
+<sys_update_name>ml_capability_definition_classification_83ea2f1053c40010d1dcddeeff7b12f5</sys_update_name>
+<sys_updated_by>system</sys_updated_by>
+<sys_updated_on>2026-01-29 15:58:30</sys_updated_on>
+<table>sn_hr_core_case</table>
+<training_frequency>run_once</training_frequency>
+<triggered_source>UI</triggered_source>
+<word_vector_corpus/>
+</ml_capability_definition_classification>
+</xml>
+ 
