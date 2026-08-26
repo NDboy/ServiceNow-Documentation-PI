@@ -1,0 +1,49 @@
+<xml>
+<ml_capability_definition_classification>
+<active>true</active>
+<capability display_value="Workflow Classification">877599b3770111107d80204bcd5a994c</capability>
+<current_solution_version>3</current_solution_version>
+<dataset_language>de</dataset_language>
+<fields>description</fields>
+<filter table="sn_hr_core_case">
+active=false^state!=7^descriptionISNOTEMPTY^u_acting_es_domain=213f0a081b0870109f1c1065bb4bcb40^hr_service!=39d2b2e6db15fc10c14a94d3f3961968^ORhr_service!=da5b92711b040990732842eacd4bcb0c^ORhr_service!=ea55429a1b99389075c932219b4bcb46^EQ
+<item goto="false" or="false" field="active" endquery="false" value="false" operator="=" newquery="false"/>
+<item goto="false" or="false" field="state" endquery="false" value="7" operator="!=" newquery="false"/>
+<item goto="false" or="false" field="description" endquery="false" value="" operator="ISNOTEMPTY" newquery="false"/>
+<item goto="false" or="false" field="u_acting_es_domain" endquery="false" value="213f0a081b0870109f1c1065bb4bcb40" operator="=" newquery="false" display_table="sn_hr_core_hr_es_domain" display_value="HR ES AT"/>
+<item goto="false" or="false" field="hr_service" endquery="false" value="39d2b2e6db15fc10c14a94d3f3961968" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="General Inquiry"/>
+<item goto="false" or="true" field="hr_service" endquery="false" value="da5b92711b040990732842eacd4bcb0c" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="General Inquiry"/>
+<item goto="false" or="true" field="hr_service" endquery="false" value="ea55429a1b99389075c932219b4bcb46" operator="!=" newquery="false" display_table="sn_hr_core_service" display_value="General Inquiry"/>
+<item goto="false" or="false" field="" endquery="true" value="" operator="=" newquery="false"/>
+</filter>
+<groupby_field/>
+<output_field>hr_service</output_field>
+<pretrained>false</pretrained>
+<request_source>api</request_source>
+<solution_label>HR Case Classification AT</solution_label>
+<solution_name>ml_x_bmwag_sn_hr_core_global_hr_case_classification_at</solution_name>
+<solution_parameters/>
+<solution_properties>{"datasetProperties":{"tableName":"sn_hr_core_case","fieldNames":["description","hr_service","sys_created_on"],"encodedQuery":"active\u003dfalse^state!\u003d7^descriptionISNOTEMPTY^u_acting_es_domain\u003d213f0a081b0870109f1c1065bb4bcb40^hr_service!\u003d39d2b2e6db15fc10c14a94d3f3961968^ORhr_service!\u003dda5b92711b040990732842eacd4bcb0c^ORhr_service!\u003dea55429a1b99389075c932219b4bcb46^EQ","maxRowLimit":300000.0,"fetchDisplayValue":false},"description":"Workflow Classification","inputFieldNames":["description"],"label":"HR Case Classification AT","name":"ml_x_bmwag_sn_hr_core_global_hr_case_classification_at","predictedFieldName":"hr_service","processingLanguage":"de","schedulingInfo":{"useCase":"workflow_classification"},"scope":"sn_hr_core","stopwords":["Default German Stopwords","Default English Stopwords"],"tags":["classification","Workflow"],"trainingFrequency":"run_once","trainingPipeline":{"pipelineName":"classification_pipeline_v3","pipelineInput":{"datasets":{"incidents":{"tableName":"sn_hr_core_case","fieldNames":["description","hr_service","sys_created_on"],"encodedQuery":"active\u003dfalse^state!\u003d7^descriptionISNOTEMPTY^u_acting_es_domain\u003d213f0a081b0870109f1c1065bb4bcb40^hr_service!\u003d39d2b2e6db15fc10c14a94d3f3961968^ORhr_service!\u003dda5b92711b040990732842eacd4bcb0c^ORhr_service!\u003dea55429a1b99389075c932219b4bcb46^EQ","maxRowLimit":300000.0,"fetchDisplayValue":false}},"config":{"features":["description"],"encoder_method":"GUSE-ML","solution_output_field_type_reference":"true","language":"de","class_separator":":","classifier_method":"FeedForward","stopwords":"aber, alle, allem, allen, aller, alles, als, also, am, an, ander, andere, anderem, anderen, anderer, anderes, anderm, andern, anderr, anders, auch, auf, aus, bei, bin, bis, bist, da, damit, dann, das, dasselbe, dazu, daß, dein, deine, deinem, deinen, deiner, deines, dem, demselben, den, denn, denselben, der, derer, derselbe, derselben, des, desselben, dessen, dich, die, dies, diese, dieselbe, dieselben, diesem, diesen, dieser, dieses, dir, doch, dort, du, durch, ein, eine, einem, einen, einer, eines, einig, einige, einigem, einigen, einiger, einiges, einmal, er, es, etwas, euch, euer, eure, eurem, euren, eurer, eures, für, gegen, gewesen, hab, habe, haben, hat, hatte, hatten, hier, hin, hinter, ich, ihm, ihn, ihnen, ihr, ihre, ihrem, ihren, ihrer, ihres, im, in, indem, ins, ist, jede, jedem, jeden, jeder, jedes, jene, jenem, jenen, jener, jenes, jetzt, kann, kein, keine, keinem, keinen, keiner, keines, können, könnte, machen, man, manche, manchem, manchen, mancher, manches, mein, meine, meinem, meinen, meiner, meines, mich, mir, mit, muss, musste, nach, nicht, nichts, noch, nun, nur, ob, oder, ohne, sehr, sein, seine, seinem, seinen, seiner, seines, selbst, sich, sie, sind, so, solche, solchem, solchen, solcher, solches, soll, sollte, sondern, sonst, um, und, uns, unse, unsem, unsen, unser, unses, unter, viel, vom, von, vor, war, waren, warst, was, weg, weil, weiter, welche, welchem, welchen, welcher, welches, wenn, werde, werden, wie, wieder, will, wir, wird, wirst, wo, wollen, wollte, während, würde, würden, zu, zum, zur, zwar, zwischen, übera, about, above, after, again, against, all, am, an, and, any, are, as, at, b, be, because, been, before, being, below, between, both, but, by, c, can, could, d, did, do, does, doing, down, during, e, each, f, few, for, from, further, g, h, had, has, have, having, he, he\u0027d, he\u0027ll, he\u0027s, her, here, here\u0027s, hers, herself, him, himself, his, how, how\u0027s, i, i\u0027d, i\u0027ll, i\u0027m, i\u0027ve, if, in, into, is, it, it\u0027s, its, itself, j, k, l, let\u0027s, m, me, more, most, my, myself, n, no, nor, not, o, of, off, on, once, only, or, other, ought, our, ours , ourselves, out, over, own, p, q, r, s, same, she, she\u0027d, she\u0027ll, she\u0027s, should, so, some, such, t, than, that, that\u0027s, the, their, theirs, them, themselves, then, there, there\u0027s, these, they, they\u0027d, they\u0027ll, they\u0027re, they\u0027ve, this, those, through, to, too, u, under, until, up, v, very, w, was, we, we\u0027d, we\u0027ll, we\u0027re, we\u0027ve, were, what, what\u0027s, when, when\u0027s, where, where\u0027s, which, while, who, who\u0027s, whom, why, why\u0027s, with, would, x, y, you, you\u0027d, you\u0027ll, you\u0027re, you\u0027ve, your, yours, yourself, yourselves, z, return, hes, heres, hows, im, its, lets, shes, thats, theres, theyll, theyre, theyve, were, whats, whens, wheres, whos, whys, youd, youll, youre, youve, -lrb-, -rrb-, -lsb-, -rsb-, \u0027ll, \u0027s, \u0027m","labels":["hr_service"],"enable_class_separator":"true"}}},"triggered_source":"UI","workflowConfiguration":{"trainingFrequency":"run_once"}}</solution_properties>
+<stopwords>a6282a25533333008c5bddeeff7b12c3,9d182a25533333008c5bddeeff7b12c0</stopwords>
+<sys_class_name>ml_capability_definition_classification</sys_class_name>
+<sys_created_by>Q552529</sys_created_by>
+<sys_created_on>2026-06-22 09:02:43</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_domain>global</sys_domain>
+<sys_id>439baff6c36d43105114f30015013183</sys_id>
+<sys_mod_count>8</sys_mod_count>
+<sys_name>HR Case Classification AT</sys_name>
+<sys_package display_value="Human Resources: Core" source="sn_hr_core">d4ac3fff5b311200a4656ede91f91af2</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Human Resources: Core">d4ac3fff5b311200a4656ede91f91af2</sys_scope>
+<sys_update_name>ml_capability_definition_classification_439baff6c36d43105114f30015013183</sys_update_name>
+<sys_updated_by>Q552529</sys_updated_by>
+<sys_updated_on>2026-07-13 12:46:15</sys_updated_on>
+<table>sn_hr_core_case</table>
+<training_frequency>run_once</training_frequency>
+<triggered_source>UI</triggered_source>
+<word_vector_corpus/>
+</ml_capability_definition_classification>
+</xml>
+ 
