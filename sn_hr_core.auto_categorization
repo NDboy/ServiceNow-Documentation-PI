@@ -1,0 +1,108 @@
+<xml>
+<sys_properties>
+<choices/>
+<description>Enable HR Case auto categorization</description>
+<ignore_cache>false</ignore_cache>
+<is_private>false</is_private>
+<name>sn_hr_core.auto_categorization</name>
+<read_roles>sn_hr_core.manager</read_roles>
+<suffix>auto_categorization</suffix>
+<sys_class_name>sys_properties</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-04-20 17:29:52</sys_created_on>
+<sys_customer_update>false</sys_customer_update>
+<sys_id>8a2e099223211300fb0c949e27bf6543</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_name>sn_hr_core.auto_categorization</sys_name>
+<sys_package display_value="Human Resources: Core" source="sn_hr_core">d4ac3fff5b311200a4656ede91f91af2</sys_package>
+<sys_policy/>
+<sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+<sys_scope display_value="Human Resources: Core">d4ac3fff5b311200a4656ede91f91af2</sys_scope>
+<sys_update_name>sys_properties_8a2e099223211300fb0c949e27bf6543</sys_update_name>
+<sys_updated_by>Q552529</sys_updated_by>
+<sys_updated_on>2026-02-24 08:22:20</sys_updated_on>
+<type>boolean</type>
+<value>true</value>
+<write_roles>sn_hr_core.manager</write_roles>
+</sys_properties>
+<sys_translated_text action="delete_multiple" query="documentkey=8a2e099223211300fb0c949e27bf6543"/>
+<sys_translated_text action="INSERT_OR_UPDATE">
+<documentkey name="sn_hr_core.auto_categorization" tablename="sys_properties">8a2e099223211300fb0c949e27bf6543</documentkey>
+<fieldname>description</fieldname>
+<language>de</language>
+<sys_created_by>system</sys_created_by>
+<sys_created_on>2019-11-30 11:48:57</sys_created_on>
+<sys_id>55311dfb1b5500107a1bb841dd4bcb6a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>system</sys_updated_by>
+<sys_updated_on>2019-11-30 11:48:57</sys_updated_on>
+<tablename>sys_properties</tablename>
+<value>Automatische Kategorisierung von HR-Fällen aktivieren</value>
+</sys_translated_text>
+<sys_translated_text action="INSERT_OR_UPDATE">
+<documentkey name="sn_hr_core.auto_categorization" tablename="sys_properties">8a2e099223211300fb0c949e27bf6543</documentkey>
+<fieldname>description</fieldname>
+<language>es</language>
+<sys_created_by>QXZ0G1W</sys_created_by>
+<sys_created_on>2020-08-16 11:48:45</sys_created_on>
+<sys_id>dd8e4c631b6a5c58731342a39b4bcba2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>QXZ0G1W</sys_updated_by>
+<sys_updated_on>2020-08-16 11:48:45</sys_updated_on>
+<tablename>sys_properties</tablename>
+<value>Habilitar categorización automática de caso de RR. HH.</value>
+</sys_translated_text>
+<sys_translated_text action="INSERT_OR_UPDATE">
+<documentkey name="sn_hr_core.auto_categorization" tablename="sys_properties">8a2e099223211300fb0c949e27bf6543</documentkey>
+<fieldname>description</fieldname>
+<language>hu</language>
+<sys_created_by>QXZ0G1W</sys_created_by>
+<sys_created_on>2020-08-15 10:40:34</sys_created_on>
+<sys_id>645536c31b66d0d0676bbbb88b4bcbcd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>QXZ0G1W</sys_updated_by>
+<sys_updated_on>2020-08-15 10:40:34</sys_updated_on>
+<tablename>sys_properties</tablename>
+<value>HR-eset automatikus kategorizálásának engedélyezése</value>
+</sys_translated_text>
+<sys_translated_text action="INSERT_OR_UPDATE">
+<documentkey name="sn_hr_core.auto_categorization" tablename="sys_properties">8a2e099223211300fb0c949e27bf6543</documentkey>
+<fieldname>description</fieldname>
+<language>ja</language>
+<sys_created_by>QXZ0G1W</sys_created_by>
+<sys_created_on>2020-08-15 06:11:33</sys_created_on>
+<sys_id>c0c7bd071b2a50d0676bbbb88b4bcb18</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>QXZ0G1W</sys_updated_by>
+<sys_updated_on>2020-08-15 06:11:33</sys_updated_on>
+<tablename>sys_properties</tablename>
+<value>HR ケースの自動分類を有効にする</value>
+</sys_translated_text>
+<sys_translated_text action="INSERT_OR_UPDATE">
+<documentkey name="sn_hr_core.auto_categorization" tablename="sys_properties">8a2e099223211300fb0c949e27bf6543</documentkey>
+<fieldname>description</fieldname>
+<language>pb</language>
+<sys_created_by>QXZ1OPP</sys_created_by>
+<sys_created_on>2021-07-30 18:17:04</sys_created_on>
+<sys_id>9aa0fd27db65b050519933f5f49619f0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>QXZ1OPP</sys_updated_by>
+<sys_updated_on>2021-07-30 18:17:04</sys_updated_on>
+<tablename>sys_properties</tablename>
+<value>Habilitar categorização automática de Caso de RH</value>
+</sys_translated_text>
+<sys_translated_text action="INSERT_OR_UPDATE">
+<documentkey name="sn_hr_core.auto_categorization" tablename="sys_properties">8a2e099223211300fb0c949e27bf6543</documentkey>
+<fieldname>description</fieldname>
+<language>th</language>
+<sys_created_by>QXZ0G1W</sys_created_by>
+<sys_created_on>2020-08-14 17:52:29</sys_created_on>
+<sys_id>b99e433e1be29458731342a39b4bcb1b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>QXZ0G1W</sys_updated_by>
+<sys_updated_on>2020-08-14 17:52:29</sys_updated_on>
+<tablename>sys_properties</tablename>
+<value>เปิดใช้งานการจัดประเภทอัตโนมัติของกรณี HR</value>
+</sys_translated_text>
+</xml>
+ 
